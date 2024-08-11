@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import Header from "../../Components/Header";
 import axios from "axios";
 import { message } from "antd";
+import { useNavigate } from "react-router-dom";
 
 const BASE_URL = process.env.REACT_APP_BASE_URL || "http://localhost:8000";
 
 function Login() {
+  const navigate = useNavigate();
   const [user, setUser] = useState({
     username: "",
     password: "",
@@ -20,7 +22,7 @@ function Login() {
       if (res.data.success) {
         message.success(res.data.message);
         localStorage.setItem("token", res.data.token); // Store only the token
-        window.location.href = "/admin";
+        navigate('/admin');
       } else {
         message.error(res.data.message);
       }
