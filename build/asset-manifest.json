@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a086377c.css",
-    "main.js": "/static/js/main.0c46dbf2.js",
+    "main.css": "/static/css/main.8ab433fe.css",
+    "main.js": "/static/js/main.c8a675ca.js",
     "static/js/453.419a5d54.chunk.js": "/static/js/453.419a5d54.chunk.js",
     "static/media/Banner-img.png": "/static/media/Banner-img.de50d2d5d7f93dd26f18.png",
     "static/media/logo2.png": "/static/media/logo2.0b144c7d393329b253b9.png",
@@ -10,12 +10,12 @@
     "static/media/toastmasters-logo.png": "/static/media/toastmasters-logo.4a469f1cd93bd1b5ebad.png",
     "static/media/logo3.png": "/static/media/logo3.1927daf639cd0f45a83f.png",
     "index.html": "/index.html",
-    "main.a086377c.css.map": "/static/css/main.a086377c.css.map",
-    "main.0c46dbf2.js.map": "/static/js/main.0c46dbf2.js.map",
+    "main.8ab433fe.css.map": "/static/css/main.8ab433fe.css.map",
+    "main.c8a675ca.js.map": "/static/js/main.c8a675ca.js.map",
     "453.419a5d54.chunk.js.map": "/static/js/453.419a5d54.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a086377c.css",
-    "static/js/main.0c46dbf2.js"
+    "static/css/main.8ab433fe.css",
+    "static/js/main.c8a675ca.js"
   ]
 }
