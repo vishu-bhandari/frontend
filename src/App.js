@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
+import React, { useCallback, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Index";
 import AboutPage from "./pages/Home/AboutPage"; 
 import ServicePage from "./pages/Home/ServicePage";
-import axios from 'axios'
-import { useDispatch, useSelector } from "react-redux";
+import axios from 'axios';
+import { useDispatch} from "react-redux";
 import { SetPortfolioData } from "./redux/rootSlice";
 import GallaryPage from "./pages/Home/GallaryPage";
 import BlogPage from "./pages/Home/BlogPage";
@@ -19,53 +19,41 @@ import Login from "./pages/Admin/Login";
 
 const BASE_URL = process.env.REACT_APP_BASE_URL;
 
-
 function App() {
-  const {portfolioData} = useSelector((state)=>state.root);
-  const dispatch=useDispatch();
-  const getPortfolioData=async()=>{
+  // const { portfolioData } = useSelector((state) => state.root);
+  const dispatch = useDispatch();
+
+  const getPortfolioData = useCallback(async () => {
     try {
-      const response=await axios.get(`${BASE_URL}/api/portfolio/get-portfolio-data`);
-      // const response=await axios.get('/api/portfolio/get-portfolio-data');
+      const response = await axios.get(`${BASE_URL}/api/portfolio/get-portfolio-data`);
       dispatch(SetPortfolioData(response.data));
     } catch (error) {
-      
+      // Handle the error appropriately
+      console.error("Error fetching portfolio data:", error);
     }
-  }
+  }, [dispatch]);
 
-  useEffect(()=>{
-    getPortfolioData()
-  },[getPortfolioData])
-
-  useEffect(()=>{
-    console.log(portfolioData);
-  },[portfolioData]);
+  useEffect(() => {
+    getPortfolioData();
+  }, [getPortfolioData]);
 
   return (
     <>
       <BrowserRouter>
-      <ScrollToTop/>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path='/AdminLogin' element={<Login/>}></Route>
+          <Route path='/AdminLogin' element={<Login />} />
           <Route path="/about" element={<AboutPage />} /> 
-          <Route path="/service" element={<ServicePage/>}></Route>
-          <Route path="/gallary" element={<GallaryPage/>}></Route>
-          <Route path="/blogs" element={<BlogPage/>}></Route>
-          <Route path="/contact" element={<ContactPage/>}></Route>
-          <Route path="/admin" element={<Admin/>}></Route>
-          <Route path="/EmpowerYou" element={<Onetoone/>}></Route>
-          <Route path="/confident-orators" element={<Speaktosucceed/>}></Route>
-          <Route path="/Eloquence" element={<Eloquence/>}></Route>
-          <Route path="/PaymentPage" element={<PaymentPage/>}></Route>
-
-          
-          
-
-          
-          
-         
-
+          <Route path="/service" element={<ServicePage />} />
+          <Route path="/gallary" element={<GallaryPage />} />
+          <Route path="/blogs" element={<BlogPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/admin" element={<Admin />} />
+          <Route path="/EmpowerYou" element={<Onetoone />} />
+          <Route path="/confident-orators" element={<Speaktosucceed />} />
+          <Route path="/Eloquence" element={<Eloquence />} />
+          <Route path="/PaymentPage" element={<PaymentPage />} />
         </Routes>
       </BrowserRouter>
     </>

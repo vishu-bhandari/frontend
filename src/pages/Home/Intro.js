@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Header from "../../Components/Header";
 import { Carousel } from "antd";
 // import BannerImage from '../../images/Banner-img.png'

@@ -93,7 +93,7 @@ function Testimonials() {
                 <img
                   className="rounded-xl shadow-xl border-2 max-w-[70%] h-auto m-auto"
                   src={currentTestimonial.imageUrl}
-                  alt="Testimonial Image"
+                  alt="Testimonial "
                   style={{ objectFit: "cover" }}
                 />
               )}

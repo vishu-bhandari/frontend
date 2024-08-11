@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import paymentHandler from "../pages/Home/one-to-one/OnePayment";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
-import { Alert, TextInput } from "flowbite-react";
+import { Alert } from "flowbite-react";
 import { Input } from "antd";
 
 function PaymentPage() {
@@ -34,7 +34,7 @@ function PaymentPage() {
             <div>
               <div className="mx-auto max-w-2xl sm:text-center">
                 <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                Complete Your Purchase
+                  Complete Your Purchase
                 </h2>
                 {/* <p className="mt-6 text-lg leading-8 text-gray-600">
                   Master your oratory skills with our transformational course,
@@ -42,8 +42,8 @@ function PaymentPage() {
                   speak effectively in any situation.
                 </p> */}
               </div>
-              <div className="mx-auto mt-8 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-8 lg:mx-0 lg:flex lg:max-w-none shadow-custom-orange flex flex-col-reverse  sm:flex-row">
-                <div className="p-8 sm:p-10 lg:flex-auto ">
+              <div className="mx-auto mt-8 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-8 lg:mx-0 lg:flex lg:max-w-none shadow-custom-orange flex flex-col-reverse sm:flex-row">
+                <div className="p-8 sm:p-10 lg:flex-auto">
                   <h3 className="text-2xl font-bold tracking-tight text-gray-900">
                     Lifetime Membership
                   </h3>
@@ -58,10 +58,7 @@ function PaymentPage() {
                     </h4>
                     <div className="h-px flex-auto bg-gray-100"></div>
                   </div>
-                  <ul
-                    role="list"
-                    className="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6"
-                  >
+                  <ul className="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6">
                     <li className="flex gap-x-3">
                       <svg
                         className="h-6 w-5 flex-none text-orange-600"
@@ -124,10 +121,10 @@ function PaymentPage() {
                     </li>
                   </ul>
                 </div>
-                <div className="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0 ">
-                  <div className="rounded-2xl bg-white sm:bg-gray-50 py-10 text-center ring-1 ring-inset  ring-white sm:ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
+                <div className="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
+                  <div className="rounded-2xl bg-white sm:bg-gray-50 py-10 text-center ring-1 ring-inset ring-white sm:ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
                     <div className="mx-auto max-w-xs px-8 flex flex-col gap-3">
-                      <p className="text-base font-semibold text-gray-600 ">
+                      <p className="text-base font-semibold text-gray-600">
                         Pay once, own it forever
                       </p>
                       {/* <p className="mt-6 flex items-baseline justify-center gap-x-2">
@@ -144,11 +141,11 @@ function PaymentPage() {
                         value={amount}
                         onChange={handleInputChange}
                         placeholder="Enter amount"
-                        className="mr-2 p-1 border rounded "
+                        className="mr-2 p-1 border rounded"
                       />
                       <button
                         onClick={handlePaymentClick}
-                        className="inline-block w-auto text-center  px-6 py-4 text-white transition-all rounded-md shadow-xl sm:w-auto bg-gradient-to-r from-orange-600 to-orange-500 hover:bg-gradient-to-b dark:shadow-orange-900 shadow-orange-200 hover:shadow-2xl hover:shadow-orange-400 hover:-tranneutral-y-px "
+                        className="inline-block w-auto text-center px-6 py-4 text-white transition-all rounded-md shadow-xl sm:w-auto bg-gradient-to-r from-orange-600 to-orange-500 hover:bg-gradient-to-b dark:shadow-orange-900 shadow-orange-200 hover:shadow-2xl hover:shadow-orange-400 hover:-tranneutral-y-px"
                       >
                         Proceed to Payment
                       </button>
@@ -158,7 +155,7 @@ function PaymentPage() {
                           valid number.
                         </Alert>
                       )}
-                      <p className="sm:mt-6   text-xs leading-5 text-gray-600 ">
+                      <p className="sm:mt-6 text-xs leading-5 text-gray-600">
                         Invoices and receipts available for easy company
                         reimbursement
                       </p>
@@ -177,16 +174,3 @@ function PaymentPage() {
 }
 
 export default PaymentPage;
-
-{
-  /* <input
-        type="number"
-        value={amount}
-        onChange={handleInputChange}
-        placeholder="Enter amount"
-        className="mr-2 p-1 border rounded"
-      />
-      <button onClick={handlePaymentClick} className="font-semibold text-orange-600">
-        Proceed to Payment
-      </button> */
-}

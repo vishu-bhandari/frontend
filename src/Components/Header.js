@@ -2,12 +2,12 @@ import { Fragment, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
 import {
-  ArrowPathIcon,
+ 
   Bars3Icon,
   ChartPieIcon,
   CursorArrowRaysIcon,
   FingerPrintIcon,
-  SquaresPlusIcon,
+  
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import {
@@ -97,7 +97,7 @@ export default function Header() {
             ></rect>
           </svg>
           <NavLink to="/" className="-m-1.5 p-1.5">
-            <a href="#" className="sm:text-lg font-semibold  text-md">
+            <a href="/" className="sm:text-lg font-semibold  text-md">
               <span className="sm:text-2xl  text-xl ">S</span>ushant{" "}
               <span className="sm:text-2xl text-xl ">S</span>inghal
               <hr className="border w-1/3 border-secondary opacity" />

@@ -2,9 +2,9 @@ import React from "react";
 
 import logo1 from "../../images/toastmasters-logo.png";
 import logo2 from "../../images/logo2.png";
-import logo3 from "../../images/logo3.png";
+
 import logo4 from "../../images/logo4.png";
-import Lottie from "lottie-react";
+
 
 function Work() {
   return (

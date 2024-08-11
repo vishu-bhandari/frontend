@@ -2,31 +2,7 @@ import React from "react";
 
 
 function SpeakTest() {
-  const images = [
-    {
-      imageUrl: "https://www.youtube.com/embed/iX0xd0YU4Y0?si=TgXjd_Qt0p1MtVUw",
-      alt: "Photo by Minh Pham",
-      category: "Ankit Jain",
-    },
-    {
-      imageUrl: "https://www.youtube.com/embed/iX0xd0YU4Y0?si=TgXjd_Qt0p1MtVUw",
-      alt: "Photo by Magicle",
-      category: "Ankit Jain",
-      colSpan: 2,
-    },
-    {
-      imageUrl: "https://www.youtube.com/embed/iX0xd0YU4Y0?si=TgXjd_Qt0p1MtVUw",
-
-      alt: "Photo by Martin Sanchez",
-      category: "Bonny Mehra",
-      colSpan: 2,
-    },
-    {
-      imageUrl: "https://www.youtube.com/embed/q4Z1KglFh78?si=2UA-vniI8SWPNA42",
-      alt: "Photo by Lorenzo Herrera",
-      category: "Speak To Succeed",
-    },
-  ];
+ 
 
   const features = [
     {

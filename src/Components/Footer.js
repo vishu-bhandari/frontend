@@ -69,7 +69,7 @@ function Footer() {
                   ></rect>
                 </svg>
                 <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                  <a href="#" className="sm:text-lg font-semibold  text-md">
+                  <a href="/" className="sm:text-lg font-semibold  text-md">
                     <span className="sm:text-2xl  text-xl ">S</span>ushant{" "}
                     <span className="sm:text-2xl text-xl ">S</span>inghal
                     <hr className="border w-1/3 border-secondary opacity" />
