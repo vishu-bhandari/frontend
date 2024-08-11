@@ -35,7 +35,7 @@ function App() {
 
   useEffect(()=>{
     getPortfolioData()
-  },[])
+  },[getPortfolioData])
 
   useEffect(()=>{
     console.log(portfolioData);
