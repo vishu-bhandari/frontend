@@ -2,7 +2,7 @@ import React from "react";
 
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
-import LeftSider from "../Home/LeftSider";
+
 import { useSelector } from "react-redux";
 import ScrollToTopButton from "./ScrollToTopButton";
 import { NavLink } from "react-router-dom";
@@ -71,7 +71,7 @@ function ServicePage() {
 </section>
 
       <Footer />
-      <LeftSider />
+      
     </>
   );
 }

@@ -59,7 +59,7 @@ function OneTest() {
         <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 lg:px-8  lg:max-w-7xl">
           <div className="rounded-lg overflow-hidden mt-10 relative before:absolute before:z-20 before:bg-black before:h-full before:w-full before:bg-gradient-to-tr before:from-black before:to-teal-600 before:opacity-70">
             <iframe
-              src="https://www.youtube.com/embed/q4Z1KglFh78?si=WVgzBzjekAcr2PJ1"
+              src="https://www.youtube.com/embed/n0AqPSyV5Mg?si=x-FeOpYW5KvH6xmP"
               className="absolute z-10 object-cover w-full h-full"
               title="Public Speaking Course Introduction Video"
               frameBorder="0"
@@ -67,7 +67,7 @@ function OneTest() {
               allowFullScreen
             />
             <a
-              href="https://www.youtube.com/embed/q4Z1KglFh78?si=WVgzBzjekAcr2PJ1"
+              href="https://www.youtube.com/embed/n0AqPSyV5Mg?si=x-FeOpYW5KvH6xmP"
               className="absolute z-20 top-1/2 md:right-20 right-28 text-white -translate-y-1/2 animate-glow"
               aria-label="Watch the Introduction Video"
             >

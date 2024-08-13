@@ -6,7 +6,7 @@ import Products from './Products'
 import Testimonials from './Testimonials'
 import Contact from './Contact'
 import Videos from './Videos'
-import LeftSider from './LeftSider'
+
 import Footer from '../../Components/Footer'
 import Work from './Work'
 
@@ -31,7 +31,7 @@ function Home() {
         <Videos/>
         <Contact/>
        <Footer/>
-        <LeftSider/>
+       
 
     </div>
     </>

@@ -6,7 +6,7 @@ import OneAbout from './one-to-one/OneAbout'
 import OneContent from './one-to-one/OneContent'
 import OneTest from './one-to-one/OneTest'
 import Onebanner from './one-to-one/Onebanner'
-import LeftSider from './LeftSider'
+
 import EmpowerFaq from './one-to-one/EmpowerFaq'
 
 function Onetoone() {
@@ -21,7 +21,7 @@ function Onetoone() {
     <EmpowerFaq/>
     
     <Footer/>
-    <LeftSider/>
+  
 
 
     </>

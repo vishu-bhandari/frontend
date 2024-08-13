@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
-import LeftSider from "../Home/LeftSider";
+
 import { useSelector } from "react-redux";
 import ScrollToTopButton from "./ScrollToTopButton";
 
@@ -137,7 +137,7 @@ function BlogPage() {
         </div>
       </section>
       <Footer />
-      <LeftSider />
+     
     </>
   );
 }

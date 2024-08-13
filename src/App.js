@@ -16,6 +16,7 @@ import Eloquence from "./pages/Home/Eloquence/Eloquence";
 import PaymentPage from "./Components/PaymentPage";
 import ScrollToTop from "./Components/ScrollToTop";
 import Login from "./pages/Admin/Login";
+import WhatsApp from "./Components/WhatsApp";
 
 const BASE_URL = process.env.REACT_APP_BASE_URL;
 
@@ -41,6 +42,7 @@ function App() {
     <>
       <BrowserRouter>
         <ScrollToTop />
+        <WhatsApp/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path='/AdminLogin' element={<Login />} />

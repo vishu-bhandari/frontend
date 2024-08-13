@@ -3,24 +3,20 @@ import React from 'react'
 function EloquenceFaq() {
   const faqs = [
     {
-      question: "What can I expect from Eloquence पे चर्चा?",
-      answer: "Eloquence पे चर्चा is a unique community program designed to enhance your public speaking skills. You can expect engaging live educational sessions, interactive activities, and the opportunity to learn from experts in the field. This program will help you build charismatic confidence, master storytelling, and effectively use visual aids.",
+      question: "Will there be any interaction with Coach Sushant Singhal in this group?",
+      answer: "Coach Sushant will be part of all major discussions. You can ask any questions in the group.",
     },
     {
-      question: "How is the program structured?",
-      answer: "The program starts with live educational sessions where you will dive deep into various aspects of public speaking. You will also participate in interactive activities, brainstorming sessions, and impromptu speech practices. The structure is designed to provide a comprehensive learning experience with continuous engagement and feedback.",
+      question: "How many members are currently in the group?",
+      answer: "There are currently around 70 participants in the group.",
     },
     {
-      question: "Can the schedule be adjusted according to my needs?",
-      answer: "The program offers live sessions with set schedules, but we strive to accommodate your availability. If you have specific time preferences, please let us know, and we will work to integrate them into the program where possible.",
+      question: "Are there any community rules I should be aware of?",
+      answer: "Yes, to ensure a positive and productive space, please adhere to the following rules:\n1. No discussions on politics, religion, or caste.\n2. No self-promotion.\n3. Use respectful language—avoid derogatory or unparliamentary remarks.",
     },
     {
-      question: "Will there be any support provided after the program ends?",
-      answer: "Yes, participants of Eloquence पे चर्चा will become part of our community group, where you can stay in touch with fellow speakers and receive ongoing support and insights. We aim to foster continuous growth and connection even after the program concludes.",
-    },
-    {
-      question: "What is the coach’s experience and qualification in the field?",
-      answer: "Coach Sushant Singhal has over 6 years of experience in public speaking. He has delivered 100+ speeches and mentored more than 500 participants, providing him with extensive expertise in guiding individuals to become confident and effective speakers.",
+      question: "On which social media platform does the community operate?",
+      answer: "Currently, we are active on WhatsApp. Members will be informed if we create a Facebook group or use other social media platforms.",
     },
   ];
   

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
-import LeftSider from "../Home/LeftSider";
+
 import ScrollToTopButton from "./ScrollToTopButton";
 import { useSelector } from "react-redux";
 
@@ -62,7 +62,7 @@ function GallaryPage() {
         </div>
       </section>
       <Footer />
-      <LeftSider />
+     
     </>
   );
 }

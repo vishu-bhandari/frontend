@@ -39,11 +39,9 @@ function Intro() {
                   Welcome To 'Empower You'
                 </h1>
                 <p className="sm:mt-6 mt-3 text-lg sm:leading-8 leading-6 text-gray-600">
-                  Are you ready to embark on a transformative journey towards
-                  unparalleled success and self-discovery? Introducing "Empower
-                  You," an exclusive one-to-one coaching program meticulously
-                  crafted to elevate your skills in Public Speaking,
-                  Communication, and Life Mastery.
+                  Introducing 'Empower You,' a customized coaching program
+                  meticulously designed to elevate your Public Speaking and
+                  Communication skills through one-on-one guidance.
                 </p>
               </div>
             </div>

@@ -32,7 +32,7 @@ function ScrollToTopButton() {
       id="to-top-button"
       onClick={goToTop}
       title="Go To Top"
-      className={`fixed z-[1000] bottom-10 right-10 md:p-4 p-0 border-0 md:w-14 md:h-14 w-10 h-10 rounded-full shadow-md bg-secondary hover:bg-tertiary text-white text-lg font-semibold transition-colors duration-300 ${
+      className={`fixed z-[1000] bottom-10 md:right-10 right-2 md:p-4 p-0 border-0 md:w-14 md:h-14 w-10 h-10 rounded-full shadow-md bg-secondary hover:bg-tertiary text-white text-lg font-semibold transition-colors duration-300 ${
         isVisible ? '' : 'hidden'
       }`}
     >

@@ -19,7 +19,7 @@ function EloquenceIntro() {
                 }}
               ></div>
             </div>
-            <div className="mx-auto max-w-2xl text-center">
+            <div className="mx-auto max-w-2xl text-center ">
               <div className="sm:mb-8 sm:flex sm:justify-center">
                 <div className="relative rounded-full px-3 py-1 text-sm leading-6 mb-10 sm:mb-0">
                   <Link
@@ -39,11 +39,11 @@ function EloquenceIntro() {
                   Welcome To 'Eloquence पे चर्चा'
                 </h1>
                 <p className="sm:mt-6 mt-3 text-lg sm:leading-8 leading-6 text-gray-600">
-                  Are you ready to embark on a transformative journey to elevate
-                  your public speaking skills like never before? Introducing
-                  "Eloquence पे चर्चा," a one-of-a-kind community meticulously
-                  crafted to enhance your Public Speaking, Communication, and
-                  Life Mastery.
+                  Are you ready to take your public speaking skills to new
+                  heights? Welcome to "Eloquence pe Charcha"—a dynamic community
+                  designed to elevate your public speaking, communication, and
+                  personal mastery. Join us to unlock your full potential and
+                  transform your speaking abilities like never before.
                 </p>
               </div>
             </div>
@@ -66,7 +66,7 @@ function EloquenceIntro() {
                     <div className="text-center lg:text-left">
                       <div className=" lg:mb-0">
                         <h1 className="mt-0 sm:mb-3 mb-0 text-3xl font-bold leading-tight sm:text-4xl sm:leading-tight md:text-[40px] md:leading-tight text-white">
-                          With our course, you'll learn:
+                         So What are you waiting For?
                         </h1>
                         <p className="w-full text-base font-medium leading-relaxed sm:text-lg sm:leading-relaxed text-white">
                           {/* Add your text here */}

@@ -2,7 +2,8 @@ import React from "react";
 
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
-import LeftSider from "../Home/LeftSider";
+
+
 import image4 from "../../images/Banner-2.jpeg";
 import ScrollToTopButton from "./ScrollToTopButton";
 
@@ -151,7 +152,7 @@ function ContactPage() {
         </div>
       </section>
       <Footer />
-      <LeftSider />
+     
     </>
   );
 }
