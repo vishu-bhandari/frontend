@@ -39,7 +39,7 @@ function Intro() {
                   Welcome To 'Empower You'
                 </h1>
                 <p className="sm:mt-6 mt-3 text-lg sm:leading-8 leading-6 text-gray-600">
-                  Introducing 'Empower You,' a customized coaching program
+                  Introducing 'Empower You,' a <span className=" font-bold  text-black">customized Learning program </span> 
                   meticulously designed to elevate your Public Speaking and
                   Communication skills through one-on-one guidance.
                 </p>
@@ -64,8 +64,9 @@ function Intro() {
                     <div className="text-center lg:text-left">
                       <div className=" lg:mb-0">
                         <h1 className="mt-0 sm:mb-3 mb-0 text-3xl font-bold leading-tight sm:text-4xl sm:leading-tight md:text-[40px] md:leading-tight text-white">
-                          With our course, you'll learn:
+                        Customized Learning Program, We Cover:
                         </h1>
+                       
                         <p className="w-full text-base font-medium leading-relaxed sm:text-lg sm:leading-relaxed text-white">
                           {/* Add your text here */}
                         </p>

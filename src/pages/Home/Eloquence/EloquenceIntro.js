@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 
 function EloquenceIntro() {
   return (
@@ -22,16 +22,18 @@ function EloquenceIntro() {
             <div className="mx-auto max-w-2xl text-center ">
               <div className="sm:mb-8 sm:flex sm:justify-center">
                 <div className="relative rounded-full px-3 py-1 text-sm leading-6 mb-10 sm:mb-0">
-                  <Link
+                  <a
                     className="font-bold text-teal-600 relative z-10 animate-tealglow sm:text-2xl text-xl rounded-full px-5 py-3"
-                    to="/PaymentPage"
+                    href="https://chat.whatsapp.com/Cl2ivoOsmjmC3nKAoa4d5y"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <span
                       className="absolute inset-0"
                       aria-hidden="true"
                     ></span>
-                    Get Access <span aria-hidden="true">&rarr;</span>
-                  </Link>
+                    Join Now <span aria-hidden="true">&rarr;</span>
+                  </a>
                 </div>
               </div>
               <div className="text-center z-50">
@@ -66,7 +68,7 @@ function EloquenceIntro() {
                     <div className="text-center lg:text-left">
                       <div className=" lg:mb-0">
                         <h1 className="mt-0 sm:mb-3 mb-0 text-3xl font-bold leading-tight sm:text-4xl sm:leading-tight md:text-[40px] md:leading-tight text-white">
-                         So What are you waiting For?
+                          So What are you waiting For?
                         </h1>
                         <p className="w-full text-base font-medium leading-relaxed sm:text-lg sm:leading-relaxed text-white">
                           {/* Add your text here */}
@@ -76,12 +78,14 @@ function EloquenceIntro() {
                   </div>
                   <div className="w-full px-4 lg:w-1/2 mt-6 lg:mt-0">
                     <div className="text-center lg:text-right">
-                      <Link
-                        to="/PaymentPage"
+                      <a
+                        href="https://chat.whatsapp.com/Cl2ivoOsmjmC3nKAoa4d5y"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="animate-tealglow font-semibold rounded-lg mx-auto inline-flex items-center justify-center bg-white py-4 px-9 hover:bg-opacity-90 cursor-pointer"
                       >
-                        Enroll Now
-                      </Link>
+                       Join Now
+                      </a>
                     </div>
                   </div>
                 </div>

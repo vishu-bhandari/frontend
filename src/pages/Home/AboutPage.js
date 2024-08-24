@@ -106,7 +106,7 @@ function AboutPage() {
           <div className="flex flex-col lg:flex-row">
             <div className="lg:w-1/2 w-full lg:px-8 px-0 flex flex-col  ">
               <h1 className="sm:text-4xl text-3xl font-normal">
-                Our <span className=" font-semibold">Vision</span>
+                My <span className=" font-semibold">Vision</span>
                 <hr className="sm:border-2 border-[1.5px] w-1/3 border-secondary opacity" />
                 <hr className="sm:border-2 border-[1.5px] w-1/4 border-tertiary opacity mt-1" />
                 <hr className="sm:border-2 border-[1.5px] w-1/5 border-primary opacity mt-1" />

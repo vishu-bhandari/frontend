@@ -52,8 +52,8 @@ function BlogPage() {
                   Blogs
                 </h1>
                 <p className="mt-6 text-base text-gray-700">
-                  All of my long-form thoughts on programming, leadership,
-                  product design, and more, collected in chronological order.
+                  All of my in-depth insights on public speaking, leadership,
+                  communication, and more, collected in chronological order.
                 </p>
               </header>
               <div className="mt-16 sm:mt-20">
@@ -137,7 +137,6 @@ function BlogPage() {
         </div>
       </section>
       <Footer />
-     
     </>
   );
 }

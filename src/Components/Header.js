@@ -2,12 +2,10 @@ import { Fragment, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
 import {
- 
   Bars3Icon,
   ChartPieIcon,
   CursorArrowRaysIcon,
   FingerPrintIcon,
-  
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import {
@@ -18,16 +16,16 @@ import {
 
 const products = [
   {
-    name: "Confident Orators",
-    description: "Unlock Your Inner Orator",
-    href: "/service",
-    icon: ChartPieIcon,
-  },
-  {
     name: "Empower You",
     description: "Speak directly to your customers",
     href: "/service",
     icon: CursorArrowRaysIcon,
+  },
+  {
+    name: "Confident Orators",
+    description: "Unlock Your Inner Orator",
+    href: "/service",
+    icon: ChartPieIcon,
   },
   {
     name: "Eloquence pe charcha",
@@ -35,11 +33,13 @@ const products = [
     href: "/service",
     icon: FingerPrintIcon,
   },
- 
-  
 ];
 const callsToAction = [
-  { name: "Youtube Channel", href: "https://www.youtube.com/@sushanttalks1049", icon: PlayCircleIcon },
+  {
+    name: "Youtube Channel",
+    href: "https://www.youtube.com/@sushanttalks1049",
+    icon: PlayCircleIcon,
+  },
   { name: "Contact ", href: "/contact", icon: PhoneIcon },
 ];
 
@@ -117,6 +117,12 @@ export default function Header() {
           </button>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
+          <NavLink
+            to="/"
+            className="text-sm font-semibold leading-6 text-gray-900"
+          >
+            Home
+          </NavLink>
           <NavLink
             to="/about"
             className="text-sm font-semibold leading-6 text-gray-900"
@@ -290,6 +296,12 @@ export default function Header() {
             </button>
           </div>
           <div className="mt-6 flow-root">
+            <NavLink
+              to="/"
+              className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+            >
+              Home
+            </NavLink>
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
                 <Disclosure as="div" className="-mx-3">
@@ -320,6 +332,7 @@ export default function Header() {
                     </>
                   )}
                 </Disclosure>
+
                 <NavLink
                   to="/about"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
@@ -345,14 +358,7 @@ export default function Header() {
                   Contact
                 </NavLink>
               </div>
-              <div className="py-6">
-                <NavLink
-                  to="/AdminLogin"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Log in
-                </NavLink>
-              </div>
+             
             </div>
           </div>
         </Dialog.Panel>

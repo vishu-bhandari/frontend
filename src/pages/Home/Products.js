@@ -4,12 +4,12 @@ import { NavLink } from "react-router-dom";
 function Products() {
   const features = [
     {
-      name: "SPEAK TO SUCCEED",
+      name: "Confident Orators",
       description: "Unleash Your Inner Star Speaker",
       image: "https://i.postimg.cc/BbBKFJmn/Group-Pic-August-2.jpg",
     },
     {
-      name: "One - to - One online coaching",
+      name: "Empower You",
       description:
       "Ignite Your Potential: Introducing Empower You Coaching",
       image: "https://i.postimg.cc/vHxB2Lyr/Dhanraj-Session.png",
@@ -49,12 +49,12 @@ function Products() {
         <div className=" bg-none rounded-xl">
           <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-0 py-4  sm:py-16 lg:max-w-7xl lg:grid-cols-2 lg:px-8 ">
             <div>
-              <h2 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
-                Where do I Educate Minds?
+              <h2 className="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl">
+              Session Highlights
               </h2>
               <p className="mt-4 text-gray-500">
                 Content structuring | Mastering Modulation The art of persuasion
-                | Connect with story telling | Acing impromptu speaking Winning
+                | Connect with story telling | Acing impromptu speaking | Winning
                 Any Negotiation | Acing Any Interview Winning critical
                 conversations
               </p>

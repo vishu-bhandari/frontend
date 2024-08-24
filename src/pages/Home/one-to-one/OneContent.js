@@ -24,7 +24,7 @@ function OneContent() {
               <div className="w-full lg:w-1/2">
                 <div className="mb-8">
                   <h2 className="text-3xl lg:text-4xl font-bold mb-3">
-                    What You Will Get from this Program
+                    This is a Customized Learning Program
                   </h2>
                   <p className="text-lg lg:text-xl opacity-80">
                     Educational Sessions: Elevate your speaking game with

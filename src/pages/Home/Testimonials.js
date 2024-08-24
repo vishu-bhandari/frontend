@@ -1,3 +1,4 @@
+import { Rating } from "flowbite-react";
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
 
@@ -46,6 +47,14 @@ function Testimonials() {
             <i className="ri-double-quotes-l text-9xl top-[-2rem] left-[-3rem] opacity-15 absolute text-secondary hidden lg:block overflow-hidden"></i>
 
             <div className="w-full lg:w-1/2">
+              <Rating>
+                  <Rating.Star />
+                  <Rating.Star />
+                  <Rating.Star />
+                  <Rating.Star />
+                  <Rating.Star  />
+               
+                </Rating>
               <div className="flex flex-col gap-8">
                 <div>
                   <h2 className="text-3xl font-medium sm:text-left text-center">
@@ -58,6 +67,7 @@ function Testimonials() {
                     {currentTestimonial.position}
                   </p>
                 </div>
+                
                 <p className="leading-normal text-primary text-lg lg:mr-2 mr-0 ">
                   {currentTestimonial.description}
                 </p>
@@ -82,7 +92,6 @@ function Testimonials() {
               {currentTestimonial.imageUrl.includes("youtube.com") ? (
                 <iframe
                   className="rounded-xl shadow-xl border-2 sm:w-[560px] sm:h-[315px] w-full h-full"
-                
                   src={currentTestimonial.imageUrl}
                   title="YouTube video player"
                   frameBorder="0"

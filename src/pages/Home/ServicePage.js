@@ -31,7 +31,7 @@ function ServicePage() {
             >
               <div>
                 <div className="mt-6">
-                  <h2 className="text-3xl font-bold tracking-tight text-black">
+                  <h2 className="text-3xl font-bold tracking-tight text-black" > 
                     {project.title}
                   </h2>
                   <p className="mt-4 text-lg text-gray-500">

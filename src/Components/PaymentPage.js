@@ -45,11 +45,10 @@ function PaymentPage() {
               <div className="mx-auto mt-8 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-8 lg:mx-0 lg:flex lg:max-w-none shadow-custom-orange flex flex-col-reverse sm:flex-row">
                 <div className="p-8 sm:p-10 lg:flex-auto">
                   <h3 className="text-2xl font-bold tracking-tight text-gray-900">
-                    Lifetime Membership
+                  Membership Benefits
                   </h3>
                   <p className="mt-6 text-base leading-7 text-gray-600">
-                    Gain exclusive access to comprehensive resources and
-                    participate in our annual conference to elevate your public
+                    Gain exclusive access to comprehensive resources to elevate your public
                     speaking journey.
                   </p>
                   <div className="mt-10 flex items-center gap-x-4">
@@ -72,7 +71,7 @@ function PaymentPage() {
                           clipRule="evenodd"
                         />
                       </svg>
-                      Personalized coaching sessions
+                      Tailored sessions to improve your communication skills.
                     </li>
                     <li className="flex gap-x-3">
                       <svg
@@ -87,7 +86,7 @@ function PaymentPage() {
                           clipRule="evenodd"
                         />
                       </svg>
-                      Access to exclusive learning materials
+                      Access to premium materials for continuous learning.
                     </li>
                     <li className="flex gap-x-3">
                       <svg
@@ -102,7 +101,7 @@ function PaymentPage() {
                           clipRule="evenodd"
                         />
                       </svg>
-                      Networking opportunities with industry experts
+                      Connect with industry experts and peers.
                     </li>
                     <li className="flex gap-x-3">
                       <svg
@@ -117,7 +116,7 @@ function PaymentPage() {
                           clipRule="evenodd"
                         />
                       </svg>
-                      Certificate of Completion
+                      Earn recognition for your achievements.
                     </li>
                   </ul>
                 </div>
@@ -127,14 +126,7 @@ function PaymentPage() {
                       <p className="text-base font-semibold text-gray-600">
                         Pay once, own it forever
                       </p>
-                      {/* <p className="mt-6 flex items-baseline justify-center gap-x-2">
-                        <span className="text-5xl font-bold tracking-tight text-gray-900">
-                          $349
-                        </span>
-                        <span className="text-sm font-semibold leading-6 tracking-wide text-gray-600">
-                          USD
-                        </span>
-                      </p> */}
+                     
 
                       <Input
                         type="text"
@@ -156,8 +148,7 @@ function PaymentPage() {
                         </Alert>
                       )}
                       <p className="sm:mt-6 text-xs leading-5 text-gray-600">
-                        Invoices and receipts available for easy company
-                        reimbursement
+                       
                       </p>
                     </div>
                   </div>

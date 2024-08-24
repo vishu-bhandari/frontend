@@ -3,17 +3,17 @@ import { Link } from "react-router-dom";
 
 function EloquenceContent() {
   const courseHighlights = [
-    "Collaborate to develop impactful speeches.",
-    "Engage in real-time feedback and polls.",
-    "Access curated content to enhance communication.",
-    "Learn from interactive videos.",
-    "Participate in discussions and overcome challenges.",
-    "Enjoy exclusive live sessions on select days.",
+    "Brainstorm with caselets / related situations  on creating impactful speeches",
+
+    "⁠Share valuable speaking tips and content",
+
+    " ⁠Participate in opinion polls on various communication topics",
+
+    " ⁠  ⁠Get Exclusive Benefits for any of our newly launched course",
   ];
 
   return (
     <>
-    
       <section className="relative isolate overflow-hidden px-6 lg:overflow-visible lg:px-0 max-w-7xl m-auto">
         <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 sm:gap-y-16 gap-y-8 lg:px-8 lg:max-w-7xl">
           <div className="flex h-full justify-center items-center dark:bg-white-800">
@@ -43,7 +43,7 @@ function EloquenceContent() {
             <div className="flex flex-col gap-6 md:flex-row items-center max-w-8xl justify-evenly">
               <div className="w-full md:w-2/3 sm:px-4 px-0">
                 <h2 className="text-2xl lg:text-3xl text-center md:text-left text-primary leading-tight font-base">
-                  Course{" "}
+                  Community{" "}
                   <span className="font-semibold text-primary">Highlights</span>
                 </h2>
 
