@@ -10,6 +10,7 @@ import AdminGallery from "./AdminGallery";
 import AdminFaq from "./AdminFaq";
 import AdminTestimonial from "./AdminTestimonial";
 import AdminAboutme from "./AdminAboutme";
+import AdminContact from "./AdminContact";
 
 const { TabPane } = Tabs;
 
@@ -67,6 +68,10 @@ function Admin() {
             <TabPane tab="AboutMe" key="8">
               <AdminAboutme />
             </TabPane>
+            <TabPane tab="Contact" key="9">
+             <AdminContact/>
+            </TabPane>
+            
           </Tabs>
           
         </div>

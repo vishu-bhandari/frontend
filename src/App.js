@@ -28,9 +28,10 @@ function App() {
   const getPortfolioData = useCallback(async () => {
     try {
       const response = await axios.get(`${BASE_URL}/api/portfolio/get-portfolio-data`);
+      // const response=await axios.get('http://localhost:8000/api/portfolio/get-portfolio-data')
       dispatch(SetPortfolioData(response.data));
     } catch (error) {
-      // Handle the error appropriately
+      
       console.error("Error fetching portfolio data:", error);
     }
   }, [dispatch]);

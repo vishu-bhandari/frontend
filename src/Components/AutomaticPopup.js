@@ -1,9 +1,21 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
-import emailjs from "@emailjs/browser";
+
+const BASE_URL = process.env.REACT_APP_BASE_URL || "http://localhost:8000";
 
 function AutomaticPopup() {
   const [displayPopup, setDisplayPopup] = useState(false);
+  const [formData, setFormData] = useState({
+    firstname: "",
+    lastname: "",
+    email: "",
+    occupation: "",
+    phoneNumber: "",
+    message: "",
+  });
+  const [error, setError] = useState(null);
+  const [success, setSuccess] = useState(null);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -13,40 +25,45 @@ function AutomaticPopup() {
     return () => clearTimeout(timer);
   }, []);
 
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post(
+        `${BASE_URL}/api/portfolio/add-contact`,
+        formData
+      );
+      setSuccess(response.data.message);
+      setFormData({
+        firstname: "",
+        lastname: "",
+        email: "",
+        occupation: "",
+        phoneNumber: "",
+        message: "",
+      });
+      setError(null);
+    } catch (error) {
+      setError(
+        error.response ? error.response.data.message : "Something went wrong"
+      );
+      setSuccess(null);
+    }
+  };
+
   const handleClose = () => {
     setDisplayPopup(false);
-  };
-  const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm("service_8xtbk2q", "template_n1td15a", form.current, {
-        publicKey: "tu02JHx1PdKEOxrep",
-      })
-      .then(
-        () => {
-          console.log("SUCCESS!");
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-        }
-      );
   };
 
   return (
     <>
-      {/* <form ref={form} onSubmit={sendEmail}>
-      <label>Name</label>
-      <input type="text" name="user_name" />
-      <label>Email</label>
-      <input type="email" name="user_email" />
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send"  className="cursor-pointer"/>
-    </form> */}
-
       <div
         className={`fixed inset-0 flex items-center justify-center bg-black/60 z-[10000] ${
           displayPopup ? "block" : "hidden"
@@ -68,50 +85,55 @@ function AutomaticPopup() {
           <div>
             <form
               className="space-y-2 text-left"
-              ref={form}
-              onSubmit={sendEmail}
+              onSubmit={handleSubmit}
             >
               <div>
                 <label
-                  htmlFor="fullName"
+                  htmlFor="firstname"
                   className="block text-xs font-medium text-gray-700"
                 >
-                  Full Name*
+                  First Name*
                 </label>
                 <input
                   type="text"
-                  id="fullName"
-                  name="user_name"
+                  id="firstname"
+                  name="firstname"
+                  value={formData.firstname}
+                  onChange={handleChange}
                   className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                   required
                 />
               </div>
               <div>
                 <label
-                  htmlFor="lastName"
+                  htmlFor="lastname"
                   className="block text-xs font-medium text-gray-700"
                 >
                   Last Name*
                 </label>
                 <input
                   type="text"
-                  id="lastName"
-                  name="lastName"
+                  id="lastname"
+                  name="lastname"
+                  value={formData.lastname}
+                  onChange={handleChange}
                   className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                   required
                 />
               </div>
               <div>
                 <label
-                  htmlFor="company"
+                  htmlFor="occupation"
                   className="block text-xs font-medium text-gray-700"
                 >
-                  Company*
+                  Occupation*
                 </label>
                 <input
                   type="text"
-                  id="company"
-                  name="company"
+                  id="occupation"
+                  name="occupation"
+                  value={formData.occupation}
+                  onChange={handleChange}
                   className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                   required
                 />
@@ -126,22 +148,26 @@ function AutomaticPopup() {
                 <input
                   type="email"
                   id="email"
-                  name="user_email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
                   className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                   required
                 />
               </div>
               <div>
                 <label
-                  htmlFor="contactNo"
+                  htmlFor="phoneNumber"
                   className="block text-xs font-medium text-gray-700"
                 >
-                  Contact No.*
+                  Phone Number*
                 </label>
                 <input
                   type="text"
-                  id="contactNo"
-                  name="contactNo"
+                  id="phoneNumber"
+                  name="phoneNumber"
+                  value={formData.phoneNumber}
+                  onChange={handleChange}
                   className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                   required
                 />
@@ -157,13 +183,14 @@ function AutomaticPopup() {
                   id="message"
                   name="message"
                   rows="2"
+                  value={formData.message}
+                  onChange={handleChange}
                   className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                 ></textarea>
               </div>
               <div className="text-center">
                 <button
                   type="submit"
-                  value="Send"
                   className="inline-block px-6 py-2 text-white bg-teal-500 rounded-md shadow-md hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100"
                 >
                   Submit
@@ -171,6 +198,9 @@ function AutomaticPopup() {
               </div>
             </form>
           </div>
+
+          {success && <p className="text-green-500 mt-4 text-center">{success}</p>}
+          {error && <p className="text-red-500 mt-4 text-center">{error}</p>}
         </div>
       </div>
     </>
