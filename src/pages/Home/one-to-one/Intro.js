@@ -63,8 +63,8 @@ function Intro() {
                   <div className="w-full px-4 lg:w-1/2">
                     <div className="text-center lg:text-left">
                       <div className=" lg:mb-0">
-                        <h1 className="mt-0 sm:mb-3 mb-0 text-3xl font-bold leading-tight sm:text-4xl sm:leading-tight md:text-[40px] md:leading-tight text-white">
-                        Customized Learning Program, We Cover:
+                        <h1 className="mt-0 sm:mb-3 mb-0 text-3xl font-bold leading-tight sm:text-4xl sm:leading-tight  md:leading-tight text-white">
+                        In Our Customized Learning Program, We Cover:
                         </h1>
                        
                         <p className="w-full text-base font-medium leading-relaxed sm:text-lg sm:leading-relaxed text-white">

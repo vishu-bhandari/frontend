@@ -44,9 +44,9 @@ function Testimonials() {
         </div>
         <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 lg:px-8 py-5 sm:py-12 lg:py-16 lg:max-w-7xl">
           <div className="flex flex-col-reverse lg:flex-row justify-between items-center relative">
-            <i className="ri-double-quotes-l text-9xl top-[-2rem] left-[-3rem] opacity-15 absolute text-secondary hidden lg:block overflow-hidden"></i>
 
             <div className="w-full lg:w-1/2">
+            <i className="ri-double-quotes-l text-9xl top-[-5rem] left-[-3rem] opacity-15 absolute text-secondary hidden lg:block overflow-hidden"></i>
               <Rating>
                   <Rating.Star />
                   <Rating.Star />
