@@ -1,4 +1,4 @@
-const BASE_URL = process.env.REACT_APP_BASE_URL || "http://localhost:8000";
+const BASE_URL = process.env.REACT_APP_BASE_URL ;
 const RAZORPAY_KEY_ID = process.env.RAZORPAY_KEY_ID;
 
 const paymentHandler = async (amount) => {
@@ -27,11 +27,11 @@ const paymentHandler = async (amount) => {
 
     const options = {
       key: RAZORPAY_KEY_ID, 
-      amount: order.amount.toString(), // Razorpay expects amount in string format
+      amount: order.amount.toString(), 
       currency: order.currency,
       name: "One to One",
       description: "TEST TRANSACTION",
-      image: "", // Add a valid image URL if needed
+      image: "", 
       order_id: order.id,
       handler: async function (response) {
         const body = { ...response };
