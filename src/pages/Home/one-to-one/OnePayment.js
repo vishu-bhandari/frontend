@@ -1,5 +1,5 @@
 const BASE_URL = process.env.REACT_APP_BASE_URL || "http://localhost:8000";
-const RAZORPAY_KEY_ID = process.env.REACT_APP_RAZORPAY_KEY_ID;
+const RAZORPAY_KEY_ID = process.env.RAZORPAY_KEY_ID;
 
 const paymentHandler = async (amount) => {
   const currency = "INR";
