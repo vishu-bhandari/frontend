@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import { HideLoading, ShowLoading } from "../../redux/rootSlice";
 import axios from "axios";
 import { message } from "antd";
-import { Table, TableCell, TableHead, TableHeadCell, TableRow } from "flowbite-react";
+import { Table, TableCell, TableHead, TableHeadCell, TableRow, Textarea, Button } from "flowbite-react";
 
 const BASE_URL = process.env.REACT_APP_BASE_URL || "http://localhost:8000";
 
@@ -12,7 +12,6 @@ function AdminContact() {
   const [contacts, setContacts] = useState([]);
 
   useEffect(() => {
-    
     const fetchContacts = async () => {
       try {
         dispatch(ShowLoading());
@@ -28,9 +27,21 @@ function AdminContact() {
     fetchContacts();
   }, [dispatch]);
 
+  const handleDelete = async (id) => {
+    try {
+      dispatch(ShowLoading());
+      await axios.post(`${BASE_URL}/api/portfolio/delete-contact`, { _id: id });
+      setContacts(contacts.filter(contact => contact._id !== id));
+      dispatch(HideLoading());
+      message.success('Contact deleted successfully');
+    } catch (error) {
+      dispatch(HideLoading());
+      message.error('Failed to delete contact');
+    }
+  };
+
   return (
     <div>
-      <h2>Submitted Contacts</h2>
       <Table hoverable className="shadow-md">
         <TableHead>
           <TableHeadCell>First Name</TableHeadCell>
@@ -39,6 +50,7 @@ function AdminContact() {
           <TableHeadCell>Occupation</TableHeadCell>
           <TableHeadCell>Phone</TableHeadCell>
           <TableHeadCell>Message</TableHeadCell>
+          <TableHeadCell>Actions</TableHeadCell>
         </TableHead>
         <Table.Body className="divide-y">
           {contacts.map((contact) => (
@@ -48,8 +60,22 @@ function AdminContact() {
               <TableCell>{contact.email}</TableCell>
               <TableCell>{contact.occupation}</TableCell>
               <TableCell>{contact.phoneNumber}</TableCell>
-              <TableCell className="overflow-hidden overflow-ellipsis whitespace-nowrap" title={contact.message}>
-                {contact.message}
+              <TableCell>
+                <Textarea
+                  type="text"
+                  value={contact.message}
+                  readOnly
+                  className="w-full"
+                  rows='4'
+                />
+              </TableCell>
+              <TableCell>
+                <Button
+                  onClick={() => handleDelete(contact._id)}
+                  color="red"
+                >
+                  Delete
+                </Button>
               </TableCell>
             </TableRow>
           ))}
