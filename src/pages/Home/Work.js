@@ -19,12 +19,12 @@ function Work() {
           </h1>
         </div>
         <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16  lg:px-8 py-8 sm:py-12 py lg:py-16 lg:max-w-7xl">
-          <div class="flex flex-wrap justify-between">
+          <div className="flex flex-wrap justify-between">
            
-            <div class="relative flex-1   mb-2  ">
-              <div class="group relative cursor-pointer overflow-hidden bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:max-w-sm sm:rounded-lg sm:px-10">
-                <span class="absolute  top-10 -z-10 h-32 w-32 rounded-full bg-teal-500 transition-all duration-300 group-hover:scale-[10]"></span>
-                <div class="relative z-10 mx-auto max-w-md h-auto md:h-[34rem]">
+            <div className="relative flex-1   mb-2  ">
+              <div className="group relative cursor-pointer overflow-hidden bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:max-w-sm sm:rounded-lg sm:px-10">
+                <span className="absolute  top-10 -z-10 h-32 w-32 rounded-full bg-teal-500 transition-all duration-300 group-hover:scale-[10]"></span>
+                <div className="relative z-10 mx-auto max-w-md h-auto md:h-[34rem]">
                   <div className="flex-shrink-0  relative overflow-hidden rounded-lg max-w-xs shadow-custom-teal bg-teal-500/70 h-[18rem] ">
                     <svg
                       className="absolute bottom-0 left-0 mb-8"
@@ -62,8 +62,8 @@ function Work() {
                       </div>
                     </div>
                   </div>
-                  <div class="space-y-6 pt-5 text-base leading-7 text-gray-600 transition-all duration-300 group-hover:text-white/90">
-                    <p class="text-sm sm:text-base">
+                  <div className="space-y-6 pt-5 text-base leading-7 text-gray-600 transition-all duration-300 group-hover:text-white/90">
+                    <p className="text-sm sm:text-base">
                       As a Communication Coach at CEHRO India, Sushant offers
                       educational sessions on topics such as Communication for
                       Career Growth, Impromptu Speaking, Storytelling , etc. by
@@ -75,10 +75,10 @@ function Work() {
                 </div>
               </div>
             </div>
-            <div class="relative flex-1  mb-2 ">
-              <div class="group relative cursor-pointer overflow-hidden bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:max-w-sm sm:rounded-lg sm:px-10">
-                <span class="absolute top-10 -z-10 h-32 w-32 rounded-full bg-orange-500 transition-all duration-300 group-hover:scale-[10]"></span>
-                <div class="relative z-10 mx-auto max-w-md h-auto md:h-[34rem]">
+            <div className="relative flex-1  mb-2 ">
+              <div className="group relative cursor-pointer overflow-hidden bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:max-w-sm sm:rounded-lg sm:px-10">
+                <span className="absolute top-10 -z-10 h-32 w-32 rounded-full bg-orange-500 transition-all duration-300 group-hover:scale-[10]"></span>
+                <div className="relative z-10 mx-auto max-w-md h-auto md:h-[34rem]">
                   <div className="flex-shrink-0  relative overflow-hidden rounded-lg max-w-xs  bg-orange-500/90 h-[18rem] shadow-custom-orange ">
                     <svg
                       className="absolute bottom-0 left-0 mb-8"
@@ -123,8 +123,8 @@ function Work() {
                     </div>
                   </div>
 
-                  <div class="space-y-6 pt-5 text-base leading-7 text-gray-600 transition-all duration-300 group-hover:text-white/90">
-                    <p class="text-sm sm:text-base">
+                  <div className="space-y-6 pt-5 text-base leading-7 text-gray-600 transition-all duration-300 group-hover:text-white/90">
+                    <p className="text-sm sm:text-base">
                       Coach Sushant brings 6 years of Toastmasters experience,
                       including club presidency. He excels in Prepared and
                       Impromptu Speech Contests, guiding speakers to confidence.
@@ -135,10 +135,10 @@ function Work() {
                 </div>
               </div>
             </div>
-            <div class="relative flex-1  mb-2 ">
-              <div class="group relative cursor-pointer overflow-hidden bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:max-w-sm sm:rounded-lg sm:px-10">
-                <span class="absolute top-10 -z-10 h-32 w-32 rounded-full bg-teal-500 transition-all duration-300 group-hover:scale-[10]"></span>
-                <div class="relative z-10 mx-auto max-w-md h-auto md:h-[34rem]">
+            <div className="relative flex-1  mb-2 ">
+              <div className="group relative cursor-pointer overflow-hidden bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:max-w-sm sm:rounded-lg sm:px-10">
+                <span className="absolute top-10 -z-10 h-32 w-32 rounded-full bg-teal-500 transition-all duration-300 group-hover:scale-[10]"></span>
+                <div className="relative z-10 mx-auto max-w-md h-auto md:h-[34rem]">
                   <div className="flex-shrink-0  relative overflow-hidden rounded-lg max-w-xs shadow-custom-teal bg-teal-500/70 h-[18rem] ">
                     <svg
                       className="absolute bottom-0 left-0 mb-8"
@@ -176,8 +176,8 @@ function Work() {
                       </div>
                     </div>
                   </div>
-                  <div class="space-y-6 pt-5 text-base leading-7 text-gray-600 transition-all duration-300 group-hover:text-white/90">
-                    <p class="text-sm sm:text-base">
+                  <div className="space-y-6 pt-5 text-base leading-7 text-gray-600 transition-all duration-300 group-hover:text-white/90">
+                    <p className="text-sm sm:text-base">
                       As a Personality Development Coach at the National
                       Association for Blind, Coach Sushant empowers visually
                       impaired students to see beyond sight by mastering

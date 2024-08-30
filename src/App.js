@@ -18,7 +18,8 @@ import ScrollToTop from "./Components/ScrollToTop";
 import Login from "./pages/Admin/Login";
 import WhatsApp from "./Components/WhatsApp";
 
-const BASE_URL = process.env.REACT_APP_BASE_URL;
+const BASE_URL = process.env.REACT_APP_BASE_URL || "http://localhost:8000";
+
 
 function App() {
   // const { portfolioData } = useSelector((state) => state.root);

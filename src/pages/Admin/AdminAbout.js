@@ -6,7 +6,8 @@ import axios from "axios";
 import { message } from "antd";
 import { TextInput, Textarea } from "flowbite-react";
 
-const BASE_URL = process.env.REACT_APP_BASE_URL;
+const BASE_URL = process.env.REACT_APP_BASE_URL || "http://localhost:8000";
+
 
 
 function AdminAbout() {

@@ -70,7 +70,7 @@ function Products() {
                     </dd>
                     <NavLink to="/service" className="text-md  text-gray-700 ">
                       Learn More{" "}
-                      <i class="ri-arrow-right-line font-semibold "></i>{" "}
+                      <i className="ri-arrow-right-line font-semibold "></i>{" "}
                     </NavLink>
                   </div>
                 ))}

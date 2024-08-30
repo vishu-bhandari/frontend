@@ -69,13 +69,13 @@ function Footer() {
                   ></rect>
                 </svg>
                 <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                  <a href="/" className="sm:text-lg font-semibold  text-md">
+                  
                     <span className="sm:text-2xl  text-xl ">S</span>ushant{" "}
                     <span className="sm:text-2xl text-xl ">S</span>inghal
                     <hr className="border w-1/3 border-secondary opacity" />
                     <hr className="border w-1/4 border-tertiary opacity mt-0.5" />
                     <hr className="border w-1/5 border-primary opacity mt-0.5" />
-                  </a>
+                 
                 </span>
               </a>
               <div className="mt-6 lg:max-w-sm">
@@ -117,14 +117,7 @@ function Footer() {
               </div>
               <div className=" ">
                 <p className="mr-1 text-gray-800 font-bold">Quick Links</p>
-                {/* <a
-                  href="https://www.google.com/maps"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Our address"
-                  title="Our address"
-                  className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
-                ></a> */}
+               
                 <div className="flex flex-col  mt-2">
 
                 <Link to='/contact'>Contact Us</Link>
@@ -179,12 +172,7 @@ function Footer() {
             </p>
             <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
               <li>
-                {/* <a
-                  href="/"
-                  className="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
-                >
-                  F.A.Q
-                </a> */}
+              
                
                 <Link
                   to="/AdminLogin"

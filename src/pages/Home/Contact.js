@@ -1,47 +1,42 @@
 import { useState } from "react";
-import axios from 'axios'
+import axios from "axios";
 
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
-
-
-
-
-
 function Contact() {
- 
+  const [Firstname, setFirstname] = useState("");
+  const [Lastname, setLastname] = useState("");
+  const [Company, setCompany] = useState("");
+  const [Email, setEmail] = useState("");
+  const [Phonenumber, setPhonenumber] = useState("");
+  const [Message, setMessage] = useState("");
 
-  const [Firstname , setFirstname]=useState('');
-  const [Lastname , setLastname]=useState('');
-  const [Company , setCompany]=useState('');
-  const [Email , setEmail]=useState('');
-  const [Phonenumber, setPhonenumber]=useState('');
-  const [Message, setMessage]=useState('');
-
-
-  const handleSubmit=(e)=>{
+  const handleSubmit = (e) => {
     e.preventDefault();
     // console.log(Firstname,Lastname,Company,Email,Phonenumber,Message);
-    const data={
-      Fname:Firstname,
-      Lname:Lastname,
-      Company:Company,
-      Email:Email,
-      Phone:Phonenumber,
-      Message:Message
-    }
-    axios.post('https://sheet.best/api/sheets/52f5f9d1-87aa-4c25-8266-48677efdfcdc',data).then((response)=>{
-      console.log(response);
-      setFirstname('');
-      setLastname('');
-      setCompany('');
-      setEmail('');
-      setPhonenumber('');
-      setMessage('');
-    })
-  }
-
-  
+    const data = {
+      Fname: Firstname,
+      Lname: Lastname,
+      Company: Company,
+      Email: Email,
+      Phone: Phonenumber,
+      Message: Message,
+    };
+    axios
+      .post(
+        "https://sheet.best/api/sheets/52f5f9d1-87aa-4c25-8266-48677efdfcdc",
+        data
+      )
+      .then((response) => {
+        console.log(response);
+        setFirstname("");
+        setLastname("");
+        setCompany("");
+        setEmail("");
+        setPhonenumber("");
+        setMessage("");
+      });
+  };
 
   return (
     <>
@@ -58,19 +53,21 @@ function Contact() {
         <div className="flex lg:flex-row flex-col mx-auto  max-w-2xl  items-center gap-x-8 gap-y-16 lg:px-0  lg:max-w-7xl">
           <div className="isolate bg-white lg:px-8 lg:w-1/2 w-full px-0 ">
             <div
-        className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
-        aria-hidden="true"
-      >
-        <div
-          className="relative left-1/2 -z-10 aspect-[1155/678] w-[36.125rem] max-w-none -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-teal-500 to-orange-500 opacity-30 sm:left-[calc(50%-40rem)] sm:w-[72.1875rem]"
-          style={{
-            clipPath:
-              'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-          }}
-        />
-      </div>
-            <form  className=" mt-16 max-w-xl sm:mt-20   form" 
-            onSubmit={handleSubmit}>
+              className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
+              aria-hidden="true"
+            >
+              <div
+                className="relative left-1/2 -z-10 aspect-[1155/678] w-[36.125rem] max-w-none -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-teal-500 to-orange-500 opacity-30 sm:left-[calc(50%-40rem)] sm:w-[72.1875rem]"
+                style={{
+                  clipPath:
+                    "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
+                }}
+              />
+            </div>
+            <form
+              className=" mt-16 max-w-xl sm:mt-20   form"
+              onSubmit={handleSubmit}
+            >
               <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2 ">
                 <div>
                   <label
@@ -84,7 +81,8 @@ function Contact() {
                       type="text"
                       name="Firstname"
                       id="Firstname"
-                      onChange={(e)=>setFirstname(e.target.value)} value={Firstname}
+                      onChange={(e) => setFirstname(e.target.value)}
+                      value={Firstname}
                       autoComplete="given-name"
                       className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                     />
@@ -102,7 +100,8 @@ function Contact() {
                       type="text"
                       name="Lastname"
                       id="Lastname"
-                      onChange={(e)=>setLastname(e.target.value)} value={Lastname}
+                      onChange={(e) => setLastname(e.target.value)}
+                      value={Lastname}
                       autoComplete="family-name"
                       className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                     />
@@ -120,7 +119,8 @@ function Contact() {
                       type="text"
                       name="Company"
                       id="Company"
-                      onChange={(e)=>setCompany(e.target.value)} value={Company}
+                      onChange={(e) => setCompany(e.target.value)}
+                      value={Company}
                       autoComplete="organization"
                       className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                     />
@@ -138,7 +138,8 @@ function Contact() {
                       type="email"
                       name="Email"
                       id="Email"
-                      onChange={(e)=>setEmail(e.target.value)} value={Email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      value={Email}
                       autoComplete="email"
                       className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                     />
@@ -173,7 +174,8 @@ function Contact() {
                     <input
                       type="tel"
                       name="Phonenumber"
-                      onChange={(e)=>setPhonenumber(e.target.value)} value={Phonenumber}
+                      onChange={(e) => setPhonenumber(e.target.value)}
+                      value={Phonenumber}
                       id="Phonenumber"
                       autoComplete="tel"
                       className="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -191,10 +193,10 @@ function Contact() {
                     <textarea
                       name="Message"
                       id="Message"
-                      onChange={(e)=>setMessage(e.target.value)} value={Message}
+                      onChange={(e) => setMessage(e.target.value)}
+                      value={Message}
                       rows={4}
                       className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                      defaultValue={""}
                     />
                   </div>
                 </div>
@@ -212,12 +214,14 @@ function Contact() {
 
           <div className="lg:w-1/2 w-full  lg:px-8 px-0 ">
             <div className="mx-auto  lg:max-w-4xl sm:inline-block hidden">
-             <img src="https://i.postimg.cc/sxSrT6xx/Untitled-design.png" alt="" />
+              <img
+                src="https://i.postimg.cc/sxSrT6xx/Untitled-design.png"
+                alt=""
+              />
             </div>
           </div>
         </div>
       </div>
-
     </>
   );
 }
