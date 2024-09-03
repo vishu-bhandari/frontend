@@ -39,7 +39,7 @@ function Products() {
 
         <div className="my-10 mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10  ">
           <h1 className="text-black text-6xl lg:px-8  px-0 ">
-            My<span className="font-semibold  "> Services</span>
+            Our<span className="font-semibold  "> Services</span>
             <hr className="border-2 w-1/3 border-secondary opacity" />
             <hr className="border-2 w-1/4 border-tertiary opacity mt-1" />
             <hr className="border-2 w-1/5 border-primary opacity mt-1" />

@@ -139,7 +139,7 @@ function AboutPage() {
                   {lottieURL}
                 </dd>
                 <dt className="text-base sm:leading-7 leading-3 text-gray-600 mb-7">
-                  Live Sessions Conducted
+                People Empowered
                 </dt>
               </div>
               <div>

@@ -47,14 +47,7 @@ function Testimonials() {
 
             <div className="w-full lg:w-1/2">
             <i className="ri-double-quotes-l text-9xl top-[-5rem] left-[-3rem] opacity-15 absolute text-secondary hidden lg:block overflow-hidden"></i>
-              <Rating>
-                  <Rating.Star />
-                  <Rating.Star />
-                  <Rating.Star />
-                  <Rating.Star />
-                  <Rating.Star  />
-               
-                </Rating>
+              
               <div className="flex flex-col gap-8">
                 <div>
                   <h2 className="text-3xl font-medium sm:text-left text-center">
@@ -66,6 +59,17 @@ function Testimonials() {
                   <p className="text-gray-500 font-medium sm:text-left text-center">
                     {currentTestimonial.position}
                   </p>
+                  <div className="flex  justify-center  sm:justify-normal">
+
+                  <Rating>
+                  <Rating.Star />
+                  <Rating.Star />
+                  <Rating.Star />
+                  <Rating.Star />
+                  <Rating.Star  />
+               
+                </Rating>
+                  </div>
                 </div>
                 
                 <p className="leading-normal text-primary text-lg lg:mr-2 mr-0 ">
