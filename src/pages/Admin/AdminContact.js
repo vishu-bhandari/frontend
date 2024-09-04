@@ -41,8 +41,8 @@ function AdminContact() {
   };
 
   return (
-    <div>
-      <Table hoverable className="shadow-md">
+    <div className="overflow-x-auto">
+      <Table hoverable className="shadow-md w-full min-w-max">
         <TableHead>
           <TableHeadCell>First Name</TableHeadCell>
           <TableHeadCell>Last Name</TableHeadCell>

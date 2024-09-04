@@ -51,7 +51,7 @@ function AboutPage() {
                   <img
                     src={image}
                     alt="about"
-                    className="rounded w-[60%] lg:w-[60%] md:-top-8 top-0 relative m-auto"
+                    className="rounded w-[100%] lg:w-[100%] md:-top-8 top-0 relative m-auto"
                   />
                 </div>
               </div>
@@ -147,7 +147,7 @@ function AboutPage() {
                   {description1}
                 </dd>
                 <dt className="text-base sm:leading-7 leading-3 text-gray-600 mb-7">
-                  Videos Produced Online
+                Educational Videos Created
                 </dt>
               </div>
               <div>
