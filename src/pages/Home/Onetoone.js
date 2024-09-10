@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../../Components/Header'
 import Footer from '../../Components/Footer'
 import Intro from './one-to-one/Intro'
-import OneAbout from './one-to-one/OneAbout'
+
 import OneContent from './one-to-one/OneContent'
 import OneTest from './one-to-one/OneTest'
 import Onebanner from './one-to-one/Onebanner'
@@ -14,9 +14,9 @@ function Onetoone() {
     <>
     <Header/>
     <Intro/>
-    <OneAbout/>
-    <OneContent/>
     <OneTest/>
+   
+    <OneContent/>
     <Onebanner/>
     <EmpowerFaq/>
     

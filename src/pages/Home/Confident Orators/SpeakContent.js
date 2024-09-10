@@ -89,7 +89,7 @@ function SpeakContent() {
               </div>
               <div className="w-full md:w-1/2 flex justify-center md:justify-end ">
                 <img
-                  src="https://i.postimg.cc/cLSMvdXb/Group-Pic-January.jpg"
+                  src="https://i.postimg.cc/Nfc3vd8y/Group-Coaching-Public-Speaking.jpg"
                   alt="Group"
                   className="w-full h-auto"
                 />

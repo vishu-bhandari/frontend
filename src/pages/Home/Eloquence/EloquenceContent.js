@@ -22,7 +22,7 @@ function EloquenceContent() {
                 <h1 className="text-3xl  font-extrabold tracking-tight text-gray-900 dark:text-slate-400 sm:text-5xl md:text-6xl">
                   <span className="block xl:inline">
                     <span className="sm:mb-1 mb-5 block">
-                      Why Choose Our Course?
+                      Why Choose Our Community?
                     </span>
                     <span className="bg-gradient-to-r from-cyan-400 to-teal-600 bg-clip-text text-transparent">
                       Transform Your Speaking Skills

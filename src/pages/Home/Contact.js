@@ -1,16 +1,17 @@
 import { useState } from "react";
 import axios from "axios";
+import image4 from "../../images/Banner-2.jpeg";
 
 const BASE_URL = process.env.REACT_APP_BASE_URL || "http://localhost:8000";
 
 function Contact() {
   const [formData, setFormData] = useState({
-    firstname: '',
-    lastname: '',
-    email: '',
-    occupation: '',
-    phoneNumber: '',
-    message: ''
+    firstname: "",
+    lastname: "",
+    email: "",
+    occupation: "",
+    phoneNumber: "",
+    message: "",
   });
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(null);
@@ -19,27 +20,32 @@ function Contact() {
     const { name, value } = e.target;
     setFormData({
       ...formData,
-      [name]: value
+      [name]: value,
     });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(`${BASE_URL}/api/portfolio/add-contact`, formData);
+      const response = await axios.post(
+        `${BASE_URL}/api/portfolio/add-contact`,
+        formData
+      );
       setSuccess(response.data.message);
       setFormData({
-        firstname: '',
-        lastname: '',
-        email: '',
-        occupation: '',
-        phoneNumber: '',
-        message: ''
+        firstname: "",
+        lastname: "",
+        email: "",
+        occupation: "",
+        phoneNumber: "",
+        message: "",
       });
-      setError(null); 
+      setError(null);
     } catch (error) {
-      setError(error.response ? error.response.data.message : 'Something went wrong');
-      setSuccess(null); 
+      setError(
+        error.response ? error.response.data.message : "Something went wrong"
+      );
+      setSuccess(null);
     }
   };
 
@@ -60,7 +66,10 @@ function Contact() {
             <form onSubmit={handleSubmit} className="mt-16 max-w-xl sm:mt-20">
               <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                 <div>
-                  <label htmlFor="firstname" className="block text-sm font-semibold leading-6 text-gray-900">
+                  <label
+                    htmlFor="firstname"
+                    className="block text-sm font-semibold leading-6 text-gray-900"
+                  >
                     First name
                   </label>
                   <div className="mt-2.5">
@@ -77,7 +86,10 @@ function Contact() {
                   </div>
                 </div>
                 <div>
-                  <label htmlFor="lastname" className="block text-sm font-semibold leading-6 text-gray-900">
+                  <label
+                    htmlFor="lastname"
+                    className="block text-sm font-semibold leading-6 text-gray-900"
+                  >
                     Last name
                   </label>
                   <div className="mt-2.5">
@@ -94,7 +106,10 @@ function Contact() {
                   </div>
                 </div>
                 <div className="sm:col-span-2">
-                  <label htmlFor="occupation" className="block text-sm font-semibold leading-6 text-gray-900">
+                  <label
+                    htmlFor="occupation"
+                    className="block text-sm font-semibold leading-6 text-gray-900"
+                  >
                     Occupation
                   </label>
                   <div className="mt-2.5">
@@ -111,7 +126,10 @@ function Contact() {
                   </div>
                 </div>
                 <div className="sm:col-span-2">
-                  <label htmlFor="email" className="block text-sm font-semibold leading-6 text-gray-900">
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-semibold leading-6 text-gray-900"
+                  >
                     Email
                   </label>
                   <div className="mt-2.5">
@@ -128,7 +146,10 @@ function Contact() {
                   </div>
                 </div>
                 <div className="sm:col-span-2">
-                  <label htmlFor="phoneNumber" className="block text-sm font-semibold leading-6 text-gray-900">
+                  <label
+                    htmlFor="phoneNumber"
+                    className="block text-sm font-semibold leading-6 text-gray-900"
+                  >
                     Phone number
                   </label>
                   <div className="relative mt-2.5">
@@ -145,7 +166,10 @@ function Contact() {
                   </div>
                 </div>
                 <div className="sm:col-span-2">
-                  <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-900">
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-semibold leading-6 text-gray-900"
+                  >
                     Message
                   </label>
                   <div className="mt-2.5">
@@ -156,7 +180,6 @@ function Contact() {
                       value={formData.message}
                       onChange={handleChange}
                       className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                     
                     />
                   </div>
                 </div>
@@ -170,18 +193,25 @@ function Contact() {
                 </button>
               </div>
             </form>
-            
+
             {success && <p className="text-green-500 mt-4">{success}</p>}
             {error && <p className="text-red-500 mt-4">{error}</p>}
           </div>
 
-          <div className="lg:w-1/2 w-full lg:px-8 px-0">
+          {/* <div className="lg:w-1/2 w-full lg:px-8 px-0">
             <div className="mx-auto lg:max-w-4xl sm:inline-block hidden">
               <img
                 src="https://i.postimg.cc/sxSrT6xx/Untitled-design.png"
                 alt="Contact"
               />
             </div>
+          </div> */}
+          <div className="lg:w-1/2 w-full  px-0 sm:mb-20 mb-0 sm:shadow-md sm:border-2  border-0 shadow-md ">
+            <img
+              src={image4}
+              alt="Contact Us"
+              className=" my-10  lg:my-0 lg:rounded-none rounded-xl w-full mx-auto"
+            />
           </div>
         </div>
       </div>

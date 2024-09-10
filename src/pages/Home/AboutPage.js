@@ -136,23 +136,26 @@ function AboutPage() {
             <div className="lg:w-1/2 w-full flex flex-col lg:flex-col gap-6 justify-around lg:justify-start mt-8 lg:mt-0 sm:items-start sm:pl-44 pl-0 ">
               <div>
                 <dd className="mb-3 text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-                  {lottieURL}
+                  {lottieURL} 
+                  {/* 50 */}
                 </dd>
                 <dt className="text-base sm:leading-7 leading-3 text-gray-600 mb-7">
-                People Empowered
+                Life's Empowered
                 </dt>
               </div>
               <div>
                 <dd className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl mb-3">
                   {description1}
+                  {/* 200 */}
                 </dd>
                 <dt className="text-base sm:leading-7 leading-3 text-gray-600 mb-7">
-                Educational Videos Created
+                Educational Sessions
                 </dt>
               </div>
               <div>
                 <dd className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl mb-3">
                   {description2}
+                  {/* 50 */}
                 </dd>
                 <dt className="text-base sm:leading-7 leading-3 text-gray-600">
                   Awards in Public Speaking

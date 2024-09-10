@@ -17,19 +17,19 @@ import {
 const products = [
   {
     name: "Empower You",
-    description: "Speak directly to your customers",
+    description: "One to One Coaching Programme",
     href: "/service",
     icon: CursorArrowRaysIcon,
   },
   {
     name: "Confident Orators",
-    description: "Unlock Your Inner Orator",
+    description: "Excel your oration with our group coaching",
     href: "/service",
     icon: ChartPieIcon,
   },
   {
     name: "Eloquence pe charcha",
-    description: "Your customers’ data will be safe and secure",
+    description: "Join our Community of Eloquent Speakers",
     href: "/service",
     icon: FingerPrintIcon,
   },

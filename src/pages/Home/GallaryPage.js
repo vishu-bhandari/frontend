@@ -13,7 +13,8 @@ function GallaryPage() {
 
   useEffect(() => {
     if (portfolioData && portfolioData.gallery) {
-      setShuffledGallery(shuffleArray([...portfolioData.gallery]));
+      const [topImages, otherImages] = [portfolioData.gallery.slice(0, 2), portfolioData.gallery.slice(2)];
+      setShuffledGallery([...topImages, ...shuffleArray(otherImages)]);
     }
   }, [portfolioData]);
 
@@ -97,4 +98,3 @@ function GallaryPage() {
 }
 
 export default GallaryPage;
-

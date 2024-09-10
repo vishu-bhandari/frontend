@@ -53,7 +53,7 @@ function SpeakTest() {
             />
             <a
               href="https://www.youtube.com/embed/q4Z1KglFh78?si=WVgzBzjekAcr2PJ1"
-              className="absolute z-20 top-1/2 md:right-20 right-28 text-white -translate-y-1/2 animate-glow"
+              className="absolute z-50 top-1/2 md:right-20 right-28 text-white -translate-y-1/2 animate-glow"
               aria-label="Watch the Introduction Video"
             >
               <svg

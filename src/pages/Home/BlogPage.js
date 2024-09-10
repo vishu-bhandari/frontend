@@ -52,8 +52,7 @@ function BlogPage() {
                   Blogs
                 </h1>
                 <p className="mt-6 text-base text-gray-700">
-                  All of my in-depth insights on public speaking, leadership,
-                  communication, and more, collected in chronological order.
+                Here are some handful tips to grow your Public Speaking & Communication potential
                 </p>
               </header>
               <div className="mt-16 sm:mt-20">

@@ -1,7 +1,6 @@
 import React from "react";
 
 function OneTest() {
- 
   const features = [
     {
       title: "Personalized Attention",
@@ -57,6 +56,29 @@ function OneTest() {
     <>
       <section className="relative isolate overflow-hidden px-6 lg:overflow-visible lg:px-0 max-w-7xl m-auto ">
         <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 lg:px-8  lg:max-w-7xl">
+          <div className="sm:max-w-4xl lg:max-w-7xl mx-auto ">
+            <div className="text-center">
+              <h2 className="font-semibold text-3xl">Features you'll love</h2>
+              <p className="max-w-md mx-auto mt-2 text-gray-500">
+                Why Choose Our Course?
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-10 mt-10">
+              {features.map((feature, index) => (
+                <div key={index} className="flex gap-4 items-start">
+                  <span className="text-teal-600 bg-teal-500/100 p-3 rounded-full">
+                    <span className="w-5 h-5 bg-gray-200 rounded-full"></span>
+                  </span>
+                  <div>
+                    <h3 className="font-semibold text-xl">{feature.title}</h3>
+                    <p className="mt-1 text-gray-500">{feature.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
           <div className="rounded-lg overflow-hidden mt-10 relative before:absolute before:z-20 before:bg-black before:h-full before:w-full before:bg-gradient-to-tr before:from-black before:to-teal-600 before:opacity-70">
             <iframe
               src="https://www.youtube.com/embed/n0AqPSyV5Mg?si=x-FeOpYW5KvH6xmP"
@@ -68,7 +90,7 @@ function OneTest() {
             />
             <a
               href="https://www.youtube.com/embed/n0AqPSyV5Mg?si=x-FeOpYW5KvH6xmP"
-              className="absolute z-20 top-1/2 md:right-20 right-28 text-white -translate-y-1/2 animate-glow"
+              className="absolute z-50  top-1/2 md:right-20 right-28 text-white -translate-y-1/2 animate-glow"
               aria-label="Watch the Introduction Video"
             >
               <svg
@@ -165,77 +187,92 @@ function OneTest() {
             </div>
           </div>
 
-          <div className="sm:max-w-4xl lg:max-w-7xl mx-auto ">
-            <div className="text-center">
-              <h2 className="font-semibold text-3xl">Features you'll love</h2>
-              <p className="max-w-md mx-auto mt-2 text-gray-500">
-                Why Choose Our Course?
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-10 mt-10">
-              {features.map((feature, index) => (
-                <div key={index} className="flex gap-4 items-start">
-                  <span className="text-teal-600 bg-teal-500/100 p-3 rounded-full">
-                    <span className="w-5 h-5 bg-gray-200 rounded-full"></span>
-                  </span>
-                  <div>
-                    <h3 className="font-semibold text-xl">{feature.title}</h3>
-                    <p className="mt-1 text-gray-500">{feature.description}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
+          <div className="container mx-auto  md:py-8 py-4">
+             
+             <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+               {/* Large item */}
+               <div className="md:col-span-2 md:row-span-2 relative overflow-hidden rounded-2xl shadow-lg group">
+                 <img
+                   src="https://i.postimg.cc/mk02n8Rp/Dhanraj-Session.png"
+                   alt="Nature"
+                   className="w-full h-full object-cover"
+                 />
+                 <div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                   <div className="absolute bottom-0 left-0 right-0 p-4">
+                     <h3 className="text-2xl font-bold text-white">
+                       Empower You
+                     </h3>
+                     <p className="text-white">
+                       One To One Coaching Programme
+                     </p>
+                   </div>
+                 </div>
+               </div>
+           
+               {/* Two small items */}
+               <div className="relative overflow-hidden rounded-2xl shadow-lg group">
+                 <img
+                   src="https://i.postimg.cc/pLMLYGsp/Pic-with-Praveen-Session.png"
+                   alt="Food"
+                   className="w-full h-48 object-contain"
+                 />
+                 <div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                   <div className="absolute bottom-0 left-0 right-0 p-4">
+                     <h4 className="text-xl font-bold text-white">
+                       Empower You
+                     </h4>
+                   </div>
+                 </div>
+               </div>
+               <div className="relative overflow-hidden rounded-2xl shadow-lg group">
+                 <img
+                   src="https://i.postimg.cc/pdqVv2RF/Screenshot-with-Atulit.png"
+                   alt="Technology"
+                   className="w-full h-48 object-contain"
+                 />
+                 <div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                   <div className="absolute bottom-0 left-0 right-0 p-4">
+                     <h4 className="text-xl font-bold text-white">
+                       Empower You
+                     </h4>
+                   </div>
+                 </div>
+               </div>
+           
+               {/* Three medium items */}
+               <div className="relative overflow-hidden rounded-2xl shadow-lg group">
+                 <img
+                   src="https://i.postimg.cc/RFYM3X3C/Session-with-Hemraj.png"
+                   alt="Travel"
+                   className="w-full h-48 object-contain"
+                 />
+                 <div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                   <div className="absolute bottom-0 left-0 right-0 p-4">
+                     <h4 className="text-xl font-bold text-white">
+                       Empower You
+                     </h4>
+                   </div>
+                 </div>
+               </div>
+               <div className="relative overflow-hidden rounded-2xl shadow-lg group">
+                 <img
+                   src="https://i.postimg.cc/85cpPqzn/Session-with-Dhanraj.png"
+                   alt="Art"
+                   className="w-full h-48 object-contain"
+                 />
+                 <div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                   <div className="absolute bottom-0 left-0 right-0 p-4">
+                     <h4 className="text-xl font-bold text-white">
+                       Empower You
+                     </h4>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+           
           </div>
-
-          {/* <div className=" dark:bg-white-800  py-6 sm:py-8 lg:py-12">
-          <div className="mx-auto max-w-screen-2xl ">
-            <div className="mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
-              <div className="flex items-center gap-12">
-                <h2 className="text-2xl font-bold text-gray-800 lg:text-3xl dark:text-primary">
-                  Testimonials
-                </h2>
-
-                <p className="hidden max-w-screen-sm text-primary dark:text-primary md:block">
-                  What People are Saying
-                </p>
-              </div>
-
-              <a
-                href="#"
-                className="inline-block rounded-lg border bg-white dark:bg-gray-700 dark:border-none px-4 py-2 text-center text-sm font-semibold text-gray-500 dark:text-gray-200 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:px-8 md:py-3 md:text-base"
-              >
-                More
-              </a>
-            </div>
-
-            <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
-              {images.map((image, index) => (
-                <a
-                  key={index}
-                  href="#"
-                  className={`group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-${
-                    image.colSpan || 1
-                  } md:h-80`}
-                >
-                  <iframe
-                    src={image.imageUrl}
-                    loading="lazy"
-                    alt={image.alt}
-                    className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
-                  />
-
-                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"></div>
-
-                  <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">
-                    {image.category}
-                  </span>
-                </a>
-              ))}
-            </div>
-          </div>
-        </div> */}
-        </div>
+       
       </section>
     </>
   );
