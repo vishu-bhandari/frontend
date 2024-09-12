@@ -163,7 +163,7 @@ export default function Header() {
                       </div>
                       <div className="flex-auto">
                         <NavLink
-                          to={item.href}
+                          to='/service'
                           className="block font-semibold text-gray-900"
                         >
                           {item.name}
